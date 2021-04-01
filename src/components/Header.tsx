@@ -82,6 +82,7 @@ export function Header() {
               rubpalmeida@gmail.com
             </Text>
           </Box>
+
           <Avatar size="md" name="Rubens Almeida" src="https://github.com/rubpalmeida.png" />
         </Flex>
       </Flex>
