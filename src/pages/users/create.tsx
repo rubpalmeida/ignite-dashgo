@@ -2,7 +2,7 @@ import { Box, Button, Divider, Flex, Heading, HStack, SimpleGrid, VStack } from 
 
 import { Input } from "../../components/Form/Input";
 import { Header } from "../../components/Header";
-import { Sidebar } from "../../components/Sidebar";
+import { SideBar } from "../../components/SideBar";
 
 export default function CreateUser() {
   return (
@@ -10,7 +10,7 @@ export default function CreateUser() {
       <Header />
 
       <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
-        <Sidebar />
+        <SideBar />
 
         <Box flex="1" borderRadius={8} bg="gray.800" p="8">
           <Heading fontSize="lg" fontWeight="normal">Criar Usuário</Heading>
