@@ -25,7 +25,7 @@ export function Pagination({
   onPageChange
 }: PaginationProps) {
 
-  const lastPage = Math.floor(totalCountOfRegisters / registersPerPage);
+  const lastPage = Math.floor(totalCountOfRegisters / registersPerPage) + 1;
 
   const previousPages = currentPage > 1
     ? generatePagesArray(currentPage - 1 - siblingsCount, currentPage - 1)
@@ -38,11 +38,7 @@ export function Pagination({
   return (
     <Stack direction={["column", "row"]} spacing="6" mt="8" justify="space-between" align="center">
       <Box>
-        <strong>{currentPage > 1 ? (currentPage * 10) - registersPerPage + 1 : currentPage}</strong>
-        -
-        <strong>{currentPage * 10}</strong>
-        de
-        <strong>{totalCountOfRegisters}</strong>
+        <strong>{currentPage > 1 ? (currentPage * 10) - registersPerPage + 1 : currentPage}</strong> - <strong>{currentPage * 10}</strong> de <strong>{totalCountOfRegisters}</strong>
       </Box>
       <HStack spacing="2">
 
